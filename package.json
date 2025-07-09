@@ -1,0 +1,26 @@
+{
+  "name": "sealpack-enterprises",
+  "version": "1.0.0",
+  "description": "Sealpack Enterprises - Sustainable Packaging Solutions Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "build": "echo 'No build process needed for static HTML'",
+    "preview": "npx serve . -p 4173"
+  },
+  "keywords": [
+    "packaging",
+    "eco-friendly",
+    "sustainable",
+    "food-service"
+  ],
+  "author": "Sealpack Enterprises",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
