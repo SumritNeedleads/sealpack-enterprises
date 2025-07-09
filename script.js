@@ -67,20 +67,20 @@ function closeMobileMenu() {
 // Testimonials functionality
 const testimonials = [
     {
-        name: 'Sarah Johnson',
-        company: 'Green Eats Restaurant',
+        name: 'Sarah Tyagi',
+        company: 'Punjab',
         content: 'Sealpack has revolutionized our takeout packaging. The quality is exceptional and our customers love the eco-friendly approach.',
         rating: 5
     },
     {
-        name: 'Michael Chen',
-        company: 'Urban Bistro Chain',
+        name: 'Ravinder Singh',
+        company: 'Delhi',
         content: 'Outstanding service and products. The packaging is sturdy, attractive, and aligns perfectly with our sustainability goals.',
         rating: 5
     },
     {
-        name: 'Emma Rodriguez',
-        company: 'Fresh Market Co.',
+        name: 'Tushar Khurana',
+        company: 'Delhi',
         content: 'We\'ve been using Sealpack for over two years. Their consistency and commitment to quality is unmatched.',
         rating: 5
     }
