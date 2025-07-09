@@ -5,20 +5,20 @@ function showPage(pageId) {
     // Hide all pages
     const pages = document.querySelectorAll('.page');
     pages.forEach(page => page.classList.remove('active'));
-    
+
     // Show selected page
     const targetPage = document.getElementById(pageId + '-page');
     if (targetPage) {
         targetPage.classList.add('active');
         currentPage = pageId;
     }
-    
+
     // Update navigation active states
     updateNavigation(pageId);
-    
+
     // Close mobile menu if open
     closeMobileMenu();
-    
+
     // Scroll to top
     window.scrollTo(0, 0);
 }
@@ -44,7 +44,7 @@ mobileMenuBtn.addEventListener('click', toggleMobileMenu);
 
 function toggleMobileMenu() {
     const isOpen = !mobileMenu.classList.contains('hidden');
-    
+
     if (isOpen) {
         closeMobileMenu();
     } else {
@@ -90,7 +90,7 @@ let currentTestimonial = 0;
 
 function updateTestimonial() {
     const testimonial = testimonials[currentTestimonial];
-    
+
     // Update stars
     const starsContainer = document.getElementById('stars-container');
     starsContainer.innerHTML = '';
@@ -100,7 +100,7 @@ function updateTestimonial() {
         star.innerHTML = '<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>';
         starsContainer.appendChild(star);
     }
-    
+
     // Update content
     document.getElementById('testimonial-content').textContent = `"${testimonial.content}"`;
     document.getElementById('testimonial-name').textContent = testimonial.name;
@@ -121,17 +121,17 @@ function prevTestimonial() {
 function subscribeNewsletter() {
     const emailInput = document.getElementById('newsletter-email');
     const email = emailInput.value.trim();
-    
+
     if (!email) {
         alert('Please enter your email address.');
         return;
     }
-    
+
     if (!isValidEmail(email)) {
         alert('Please enter a valid email address.');
         return;
     }
-    
+
     // Simulate subscription
     alert('Thank you for subscribing to our newsletter!');
     emailInput.value = '';
@@ -184,13 +184,13 @@ const milestones = [
 function populateTimeline() {
     const timelineContainer = document.getElementById('timeline-container');
     if (!timelineContainer) return;
-    
+
     timelineContainer.innerHTML = '';
-    
+
     milestones.forEach((milestone, index) => {
         const timelineItem = document.createElement('div');
         timelineItem.className = `relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`;
-        
+
         timelineItem.innerHTML = `
             <div class="flex-1 px-8">
                 <div class="bg-white p-6 rounded-xl shadow-md ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}">
@@ -205,7 +205,7 @@ function populateTimeline() {
             </div>
             <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-warm-brown rounded-full border-4 border-warm-beige"></div>
         `;
-        
+
         timelineContainer.appendChild(timelineItem);
     });
 }
@@ -217,7 +217,7 @@ const bestSellerProducts = [
         title: 'Eco-Friendly Food Containers',
         price: '$24.99',
         originalPrice: '$29.99',
-        image: 'https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=500',
+        image: '/images/still-life-cardboard-organic-dinnerware.jpg',
         description: 'Premium biodegradable containers perfect for takeout and delivery services.',
         badge: 'Best Seller',
         rating: 4.8,
@@ -229,7 +229,7 @@ const bestSellerProducts = [
         title: 'Insulated Coffee Cups',
         price: '$18.99',
         originalPrice: '$22.99',
-        image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=500',
+        image: '/images/two-cups-coffee-go-stand-wooden-bench.jpg',
         description: 'Double-wall insulated cups for hot beverages with custom branding options.',
         badge: 'Hot Deal',
         rating: 4.9,
@@ -241,7 +241,7 @@ const bestSellerProducts = [
         title: 'Biodegradable Plates Set',
         price: '$32.99',
         originalPrice: '$39.99',
-        image: 'https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=500',
+        image: '/images/high-angle-plates-arrangement.jpg',
         description: 'Elegant disposable plates made from sustainable materials for events.',
         badge: 'Popular',
         rating: 4.7,
@@ -254,37 +254,37 @@ const bestSellerProducts = [
 function populateBestSellerProducts() {
     const bestSellerContainer = document.getElementById('best-seller-products');
     if (!bestSellerContainer) return;
-    
+
     bestSellerContainer.innerHTML = '';
-    
+
     bestSellerProducts.forEach((product, index) => {
         const productCard = document.createElement('div');
         productCard.className = 'group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-on-scroll';
         productCard.style.animationDelay = `${index * 0.1}s`;
-        
+
         // Generate star rating
         const fullStars = Math.floor(product.rating);
         const hasHalfStar = product.rating % 1 !== 0;
         let starsHTML = '';
-        
+
         for (let i = 0; i < fullStars; i++) {
             starsHTML += `<svg class="w-4 h-4 text-muted-orange fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>`;
         }
-        
+
         if (hasHalfStar) {
             starsHTML += `<svg class="w-4 h-4 text-muted-orange fill-current" viewBox="0 0 20 20"><defs><linearGradient id="half-${product.id}"><stop offset="50%" stop-color="currentColor"/><stop offset="50%" stop-color="#e5e7eb"/></linearGradient></defs><path fill="url(#half-${product.id})" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>`;
         }
-        
+
         const remainingStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
         for (let i = 0; i < remainingStars; i++) {
             starsHTML += `<svg class="w-4 h-4 text-gray-300 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>`;
         }
-        
+
         // Determine badge color
         let badgeColor = 'bg-red-500';
         if (product.badge === 'Hot Deal') badgeColor = 'bg-red-500';
         if (product.badge === 'Popular') badgeColor = 'bg-red-500';
-        
+
         productCard.innerHTML = `
             <div class="relative">
                 <div class="aspect-w-16 aspect-h-12 overflow-hidden">
@@ -336,7 +336,7 @@ function populateBestSellerProducts() {
                 </div>
             </div>
         `;
-        
+
         bestSellerContainer.appendChild(productCard);
     });
 }
@@ -402,13 +402,13 @@ const productCategories = [
 function populateProducts() {
     const productsGrid = document.getElementById('products-grid');
     if (!productsGrid) return;
-    
+
     productsGrid.innerHTML = '';
-    
+
     productCategories.forEach((category, index) => {
         const productCard = document.createElement('div');
         productCard.className = 'group bg-warm-beige rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105';
-        
+
         productCard.innerHTML = `
             <div class="aspect-w-16 aspect-h-12 overflow-hidden">
                 <img
@@ -449,7 +449,7 @@ function populateProducts() {
                 </div>
             </div>
         `;
-        
+
         productsGrid.appendChild(productCard);
     });
 }
@@ -458,27 +458,27 @@ function populateProducts() {
 function handleContactForm() {
     const contactForm = document.getElementById('contact-form');
     if (!contactForm) return;
-    
-    contactForm.addEventListener('submit', function(e) {
+
+    contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
-        
+
         const formData = new FormData(contactForm);
         const name = formData.get('name');
         const email = formData.get('email');
         const phone = formData.get('phone');
         const message = formData.get('message');
-        
+
         // Basic validation
         if (!name || !email || !message) {
             alert('Please fill in all required fields.');
             return;
         }
-        
+
         if (!isValidEmail(email)) {
             alert('Please enter a valid email address.');
             return;
         }
-        
+
         // Simulate form submission
         alert('Thank you for your message! We will get back to you soon.');
         contactForm.reset();
@@ -486,35 +486,35 @@ function handleContactForm() {
 }
 
 // Initialize page functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Initialize animations
     initializeAnimations();
-    
+
     // Initialize testimonials
     updateTestimonial();
-    
+
     // Set up testimonial navigation
     document.getElementById('next-testimonial').addEventListener('click', nextTestimonial);
     document.getElementById('prev-testimonial').addEventListener('click', prevTestimonial);
-    
+
     // Auto-rotate testimonials every 5 seconds
     setInterval(nextTestimonial, 5000);
-    
+
     // Initialize timeline
     populateTimeline();
-    
+
     // Initialize products
     populateProducts();
-    
+
     // Initialize best seller products
     populateBestSellerProducts();
-    
+
     // Initialize contact form
     handleContactForm();
-    
+
     // Set initial navigation state
     updateNavigation('home');
-    
+
     // Initialize scroll progress indicator
     initializeScrollProgress();
 });
@@ -526,12 +526,12 @@ function initializeAnimations() {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate-in');
-                
+
                 // Special handling for timeline items
                 if (entry.target.classList.contains('timeline-item')) {
                     setTimeout(() => {
@@ -541,28 +541,28 @@ function initializeAnimations() {
             }
         });
     }, observerOptions);
-    
+
     // Observe all elements with animation classes
     const animatedElements = document.querySelectorAll('.animate-on-scroll, .timeline-item');
     animatedElements.forEach(el => {
         observer.observe(el);
     });
-    
+
     // Add staggered animation to product cards
     const productCards = document.querySelectorAll('#product-categories-grid .group');
     productCards.forEach((card, index) => {
         card.classList.add('animate-on-scroll');
         card.style.animationDelay = `${index * 0.1}s`;
     });
-    
+
     // Add hover effects to buttons
     const buttons = document.querySelectorAll('button, .btn-animate');
     buttons.forEach(button => {
-        button.addEventListener('mouseenter', function() {
+        button.addEventListener('mouseenter', function () {
             this.style.transform = 'translateY(-2px)';
         });
-        
-        button.addEventListener('mouseleave', function() {
+
+        button.addEventListener('mouseleave', function () {
             this.style.transform = 'translateY(0)';
         });
     });
@@ -571,12 +571,12 @@ function initializeAnimations() {
 // Scroll progress indicator
 function initializeScrollProgress() {
     const scrollIndicator = document.getElementById('scroll-indicator');
-    
+
     window.addEventListener('scroll', () => {
         const scrollTop = window.pageYOffset;
         const docHeight = document.body.scrollHeight - window.innerHeight;
         const scrollPercent = (scrollTop / docHeight) * 100;
-        
+
         scrollIndicator.style.width = scrollPercent + '%';
     });
 }
@@ -592,7 +592,7 @@ function showPage(pageId) {
             page.classList.remove('active');
         }, 250);
     });
-    
+
     // Show selected page with fade in
     setTimeout(() => {
         const targetPage = document.getElementById(pageId + '-page');
@@ -604,16 +604,16 @@ function showPage(pageId) {
             }, 50);
             currentPage = pageId;
         }
-        
+
         // Update navigation active states
         updateNavigation(pageId);
-        
+
         // Close mobile menu if open
         closeMobileMenu();
-        
+
         // Scroll to top
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        
+
         // Re-initialize animations for the new page
         setTimeout(() => {
             initializeAnimations();
@@ -627,7 +627,7 @@ function openMobileMenu() {
     mobileMenu.classList.add('show');
     menuIcon.classList.add('hidden');
     closeIcon.classList.remove('hidden');
-    
+
     // Animate menu items
     const menuItems = mobileMenu.querySelectorAll('a');
     menuItems.forEach((item, index) => {
@@ -654,11 +654,11 @@ function closeMobileMenu() {
 function updateTestimonial() {
     const testimonialCard = document.querySelector('.testimonial-card');
     const testimonial = testimonials[currentTestimonial];
-    
+
     // Fade out
     testimonialCard.style.opacity = '0.5';
     testimonialCard.style.transform = 'scale(0.95)';
-    
+
     setTimeout(() => {
         // Update stars
         const starsContainer = document.getElementById('stars-container');
@@ -670,7 +670,7 @@ function updateTestimonial() {
             star.style.transform = 'scale(0.5)';
             star.innerHTML = '<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>';
             starsContainer.appendChild(star);
-            
+
             // Animate star appearance
             setTimeout(() => {
                 star.style.transition = 'all 0.3s ease';
@@ -678,12 +678,12 @@ function updateTestimonial() {
                 star.style.transform = 'scale(1)';
             }, i * 100);
         }
-        
+
         // Update content
         document.getElementById('testimonial-content').textContent = `"${testimonial.content}"`;
         document.getElementById('testimonial-name').textContent = testimonial.name;
         document.getElementById('testimonial-company').textContent = testimonial.company;
-        
+
         // Fade in
         testimonialCard.style.opacity = '1';
         testimonialCard.style.transform = 'scale(1)';
@@ -710,7 +710,7 @@ function addScrollAnimations() {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -719,7 +719,7 @@ function addScrollAnimations() {
             }
         });
     }, observerOptions);
-    
+
     // Observe elements for animation
     const animatedElements = document.querySelectorAll('.group, .text-center');
     animatedElements.forEach(el => {
@@ -732,3 +732,42 @@ function addScrollAnimations() {
 
 // Initialize scroll animations after page load
 window.addEventListener('load', addScrollAnimations);
+
+
+// Blogs
+
+const blogPosts = [
+    {
+        title: "Why Sustainable Packaging is the Future",
+        image: "https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=600",
+        description: "Explore the rising trend of eco-conscious packaging and how it's transforming industries.",
+        link: "#"
+    },
+    {
+        title: "How to Choose the Right Food Packaging",
+        image: "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=600",
+        description: "Tips to select safe, functional, and eco-friendly packaging solutions for your business.",
+        link: "#"
+    },
+    {
+        title: "Sealpack’s Journey to Sustainability",
+        image: "https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=600",
+        description: "A behind-the-scenes look at our mission to redefine packaging with purpose.",
+        link: "#"
+    }
+];
+
+const blogContainer = document.getElementById('blog-list');
+blogPosts.forEach(post => {
+    const card = document.createElement('div');
+    card.className = "bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300";
+    card.innerHTML = `
+      <img src="${post.image}" alt="${post.title}" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-logo-gray mb-2">${post.title}</h3>
+        <p class="text-logo-gray/70 text-sm mb-4">${post.description}</p>
+        <a href="${post.link}" class="text-logo-blue-dark font-semibold hover:underline">Read More →</a>
+      </div>
+    `;
+    blogContainer.appendChild(card);
+});
