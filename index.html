@@ -99,6 +99,8 @@
                         class="nav-link m-0 px-3 py-2 rounded-md text-sm font-medium transition-colors text-white">Products</a>
                     <a href="#" onclick="showPage('contact')"
                         class="nav-link m-0 px-3 py-2 rounded-md text-sm font-medium transition-colors text-white">Contact</a>
+                    <a href="#" onclick="showPage('sustainability')"
+                        class="nav-link m-0 px-3 py-2 rounded-md text-sm font-medium transition-colors text-white">Sustainability</a>
                     <a href="#" onclick="showPage('blog')"
                         class="nav-link m-0 px-3 py-2 rounded-md text-sm font-medium transition-colors text-white">Blog</a>
                 </div>
@@ -137,11 +139,11 @@
 
                 <!-- Mobile menu button -->
                 <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-logo-gray hover:text-logo-red">
-                    <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
-                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="white" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
                         </path>
                     </svg>
@@ -153,15 +155,17 @@
         <div id="mobile-menu" class="md:hidden bg-warm-beige border-t border-logo-blue-dark/20 hidden">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#" onclick="showPage('home')"
-                    class="nav-link block px-3 py-2 rounded-md text-base font-medium transition-colors text-logo-gray hover:text-logo-red">Home</a>
+                    class="nav-link block px-3 py-2 rounded-md text-base font-medium transition-colors text-white hover:text-logo-red">Home</a>
                 <a href="#" onclick="showPage('about')"
-                    class="nav-link block px-3 py-2 rounded-md text-base font-medium transition-colors text-logo-gray hover:text-logo-red">About</a>
+                    class="nav-link block px-3 py-2 rounded-md text-base font-medium transition-colors text-white hover:text-logo-red">About</a>
                 <a href="#" onclick="showPage('home')"
-                    class="nav-link block px-3 py-2 rounded-md text-base font-medium transition-colors text-logo-gray hover:text-logo-red">Products</a>
+                    class="nav-link block px-3 py-2 rounded-md text-base font-medium transition-colors text-white hover:text-logo-red">Products</a>
                 <a href="#" onclick="showPage('contact')"
-                    class="nav-link block px-3 py-2 rounded-md text-base font-medium transition-colors text-logo-gray hover:text-logo-red">Contact</a>
+                    class="nav-link block px-3 py-2 rounded-md text-base font-medium transition-colors text-white hover:text-logo-red">Contact</a>
+                <a href="#" onclick="showPage('sustainability')"
+                    class="nav-link block px-3 py-2 rounded-md text-base font-medium transition-colors text-white hover:text-logo-red">Sustainability</a>
                 <a href="#" onclick="showPage('blog')"
-                    class="nav-link block px-3 py-2 rounded-md text-base font-medium transition-colors text-logo-gray hover:text-logo-red">Blog</a>
+                    class="nav-link block px-3 py-2 rounded-md text-base font-medium transition-colors text-white hover:text-logo-red">Blog</a>
             </div>
         </div>
 
@@ -358,7 +362,7 @@
             <section class="bg-gray-50 py-12 px-4">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-16 animate-on-scroll">
-                        <h2 class="text-3xl md:text-4xl font-bold text-logo-gray mb-4">
+                        <h2 class="text-3xl md:text-4xl font-bold text-logo-blue-dark mb-4">
                             New Products
                         </h2>
                     </div>
@@ -366,50 +370,49 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                         <!-- Item 1 -->
                         <div
-                            class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
-                            <img src="/images/square-sipper.jpg"
-                                alt="Square Sipper Container" class="w-full h-40 object-cover">
-                            <div class="bg-logo-blue text-logo-blue-dark text-center py-3 font-semibold text-sm sm:text-base">
+                            class="bg-logo-blue-dark rounded overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+                            <img src="/images/square-sipper.jpg" alt="Square Sipper Container"
+                                class="w-full h-40 object-cover">
+                            <div
+                                class="bg-logo-blue-dark text-logo-white text-center py-3 font-semibold text-sm sm:text-base">
                                 Square Sipper Container
                             </div>
                         </div>
 
                         <!-- Item 2 -->
                         <div
-                            class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
-                            <img src="/images/bio-cornstarch.jpg"
-                                alt="Biodegradable Cornstarch Products" class="w-full h-40 object-cover">
-                            <div class="bg-logo-blue text-logo-blue-dark text-center py-3 font-semibold text-sm sm:text-base">
+                            class="bg-logo-blue-dark rounded overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+                            <img src="/images/bio-cornstarch.jpg" alt="Biodegradable Cornstarch Products"
+                                class="w-full h-40 object-cover">
+                            <div class="bg-logo-blue text-white text-center py-3 font-semibold text-sm sm:text-base">
                                 Biodegradable Cornstarch Products
                             </div>
                         </div>
 
                         <!-- Item 3 -->
                         <div
-                            class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
-                            <img src="/images/still-life-cardboard-organic-dinnerware.jpg"
-                                alt="Pastry Containers" class="w-full h-40 object-cover">
-                            <div class="bg-logo-blue text-logo-blue-dark text-center py-3 font-semibold text-sm sm:text-base">
+                            class="bg-logo-blue-dark rounded overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+                            <img src="/images/pastry-container.jpg" alt="Pastry Containers"
+                                class="w-full h-40 object-cover">
+                            <div class="bg-logo-blue text-white text-center py-3 font-semibold text-sm sm:text-base">
                                 Pastry Containers
                             </div>
                         </div>
 
                         <!-- Item 4 -->
                         <div
-                            class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
-                            <img src="/images/ps-cups.jpg" alt="PS Cups"
-                                class="w-full h-40">
-                            <div class="bg-logo-blue text-logo-blue-dark text-center py-3 font-semibold text-sm sm:text-base">
+                            class="bg-logo-blue-dark rounded overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+                            <img src="/images/ps-cups.jpg" alt="PS Cups" class="w-full h-40">
+                            <div class="bg-logo-blue text-white text-center py-3 font-semibold text-sm sm:text-base">
                                 PS Cups
                             </div>
                         </div>
 
                         <!-- Item 5 -->
                         <div
-                            class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
-                            <img src="/images/pizza-box.jpg" alt="Pizza Box"
-                                class="w-full h-40">
-                            <div class="bg-logo-blue text-logo-blue-dark text-center py-3 font-semibold text-sm sm:text-base">
+                            class="bg-logo-blue-dark rounded overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+                            <img src="/images/pizza-box.jpg" alt="Pizza Box" class="w-full h-40">
+                            <div class="bg-logo-blue text-white text-center py-3 font-semibold text-sm sm:text-base">
                                 Pizza Box
                             </div>
                         </div>
@@ -422,7 +425,7 @@
             <section class="py-10 bg-white">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-16 animate-on-scroll">
-                        <h2 class="text-3xl md:text-4xl font-bold text-logo-gray mb-4">
+                        <h2 class="text-3xl md:text-4xl font-bold text-logo-blue-dark mb-4">
                             Our Product Categories
                         </h2>
                         <p class="text-lg text-logo-gray/70 max-w-2xl mx-auto">
@@ -431,7 +434,8 @@
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8" id="product-categories-grid">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 text-center"
+                        id="product-categories-grid">
                         <div
                             class="group bg-warm-beige rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                             <div class="aspect-w-16 aspect-h-12 overflow-hidden">
@@ -439,7 +443,7 @@
                                     class="w-full h-48 object-cover  group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">Plates and Bowls</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">Plates and Bowls</h3>
                             </div>
                         </div>
 
@@ -450,7 +454,7 @@
                                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">Reusable Cups</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">Reusable Cups</h3>
                             </div>
                         </div>
 
@@ -461,18 +465,18 @@
                                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">Cutlery</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">Cutlery</h3>
                             </div>
                         </div>
 
                         <div
                             class="group bg-warm-beige rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                             <div class="aspect-w-16 aspect-h-12 overflow-hidden">
-                                <img src="images/eco-friendly-tableware-assortment.jpg" alt="Cutlery"
+                                <img src="images/grab-go.jpg" alt="Cutlery"
                                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">Grab & Go</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">Grab & Go</h3>
                             </div>
                         </div>
 
@@ -483,7 +487,7 @@
                                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">Take Away</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">Take Away</h3>
                             </div>
                         </div>
 
@@ -494,7 +498,7 @@
                                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">Bags</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">Bags</h3>
                             </div>
                         </div>
 
@@ -505,7 +509,9 @@
                                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">Biodegradable Cornstarch Products</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">Biodegradable Cornstarch
+                                    Products
+                                </h3>
                             </div>
                         </div>
 
@@ -516,40 +522,40 @@
                                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">Aluminium</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">Aluminium</h3>
                             </div>
                         </div>
 
                         <div
                             class="group bg-warm-beige rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                             <div class="aspect-w-16 aspect-h-12 overflow-hidden">
-                                <img src="images/eco-friendly-tableware-assortment.jpg" alt="Cutlery"
+                                <img src="images/bakery-sweet.jpg" alt="Cutlery"
                                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">Bakery & Sweet</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">Bakery & Sweet</h3>
                             </div>
                         </div>
 
                         <div
                             class="group bg-warm-beige rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                             <div class="aspect-w-16 aspect-h-12 overflow-hidden">
-                                <img src="images/tasty-food-arrangement-top-view.jpg" alt="Pouches & Rolls"
+                                <img src="images/fnv-butchery.jpg" alt="Pouches & Rolls"
                                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">FNV & Butchery</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">FNV & Butchery</h3>
                             </div>
                         </div>
 
                         <div
                             class="group bg-warm-beige rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                             <div class="aspect-w-16 aspect-h-12 overflow-hidden">
-                                <img src="images/high-angle-plates-arrangement.jpg" alt="Trays"
+                                <img src="images/hygiene.jpg" alt="Trays"
                                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">Safety & Hygiene</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">Safety & Hygiene</h3>
                             </div>
                         </div>
 
@@ -560,7 +566,7 @@
                                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">Table Roll</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">Table Roll</h3>
                             </div>
                         </div>
 
@@ -571,7 +577,7 @@
                                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">Tissues</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">Tissues</h3>
                             </div>
                         </div>
 
@@ -582,7 +588,7 @@
                                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">Sealing Machine</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">Sealing Machine</h3>
                             </div>
                         </div>
 
@@ -593,7 +599,7 @@
                                     class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-logo-gray mb-2">Chocolate Packaging</h3>
+                                <h3 class="text-xl font-semibold text-logo-blue-dark mb-2">Chocolate Packaging</h3>
                             </div>
                         </div>
                     </div>
@@ -605,7 +611,7 @@
             <section class="py-10 bg-gray-200">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-16 animate-on-scroll">
-                        <h2 class="text-3xl md:text-4xl font-bold text-logo-gray mb-4">
+                        <h2 class="text-3xl md:text-4xl font-bold text-logo-blue-dark mb-4">
                             Best Seller Products
                         </h2>
                         <p class="text-lg text-logo-gray/70 max-w-2xl mx-auto">
@@ -630,7 +636,7 @@
             <section class="py-10 bg-white">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-16 animate-on-scroll">
-                        <h2 class="text-3xl md:text-4xl font-bold text-logo-gray mb-4">
+                        <h2 class="text-3xl md:text-4xl font-bold text-logo-blue-dark mb-4">
                             Why Choose Sealpack?
                         </h2>
                         <p class="text-lg text-logo-gray/70 max-w-2xl mx-auto">
@@ -642,10 +648,21 @@
                         <div
                             class="text-center p-6 bg-logo-blue-dark hover:bg-white border-2 hover:border-logo-blue-dark rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 animate-on-scroll hover-lift group">
                             <div class="text-logo-red mb-4 flex justify-center">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                                    </path>
+                                <svg width="32px" height="32px" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M5.68623 0H10.3138L12.178 3.27835L13.9282 2.26789L14.4282 3.13392L13.3301 7.232L9.23203 6.13392L8.73203 5.26789L10.4459 4.27837L9.15033 2L6.84966 2L6.29552 2.97447L4.56343 1.97445L5.68623 0Z"
+                                            fill="#c1272d"></path>
+                                        <path
+                                            d="M13.1649 9.05964L13.7039 10.0076L12.6055 12H9.99998L9.99998 9.99995H8.99998L5.99998 12.9999L8.99998 15.9999H9.99998L9.99998 14H13.7868L15.996 9.99242L14.8969 8.05962L13.1649 9.05964Z"
+                                            fill="#c1272d"></path>
+                                        <path
+                                            d="M3.39445 12H4.49998V14H2.21325L0.00390625 9.99242L1.8446 6.75554L0.0717772 5.732L0.571776 4.86598L4.66986 3.7679L5.76793 7.86598L5.26793 8.732L3.57669 7.75556L2.29605 10.0076L3.39445 12Z"
+                                            fill="#c1272d"></path>
+                                    </g>
                                 </svg>
                             </div>
                             <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-logo-blue-dark">
@@ -658,10 +675,48 @@
                         <div
                             class="text-center p-6 bg-logo-blue-dark hover:bg-white border-2 hover:border-logo-blue-dark rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 animate-on-scroll animate-delay-100 hover-lift group">
                             <div class="text-logo-red mb-4 flex justify-center">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                                    </path>
+                                <svg fill="#c1272d" height="32px" width="32px" version="1.1" id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 512 512" xml:space="preserve" stroke="#c1272d" stroke-width="4.096">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M120.461,153.468c-16.829,0-30.52,13.69-30.52,30.52c0,16.829,13.69,30.521,30.52,30.521 c16.829,0,30.521-13.692,30.521-30.521C150.981,167.159,137.29,153.468,120.461,153.468z M120.461,198.168 c-7.819,0-14.179-6.361-14.179-14.18c0-7.819,6.36-14.179,14.179-14.179c7.819,0,14.18,6.36,14.18,14.179 C134.64,191.807,128.279,198.168,120.461,198.168z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M188.185,64.827c-14.44,0-26.187,11.747-26.187,26.187c0,14.44,11.747,26.187,26.187,26.187 c14.44,0,26.187-11.747,26.187-26.187S202.625,64.827,188.185,64.827z M188.186,100.86c-5.43,0-9.846-4.416-9.846-9.846 c0-5.429,4.418-9.846,9.846-9.846c5.429,0,9.846,4.417,9.846,9.846C198.032,96.443,193.616,100.86,188.186,100.86z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M256.075,426.942c-14.44,0-26.187,11.747-26.187,26.187c0,14.439,11.747,26.187,26.187,26.187 c14.44,0,26.187-11.747,26.187-26.187C282.263,438.689,270.515,426.942,256.075,426.942z M256.075,462.974 c-5.429,0-9.846-4.416-9.846-9.846c0-5.43,4.417-9.846,9.846-9.846c5.428,0,9.846,4.418,9.846,9.846 C265.921,458.556,261.504,462.974,256.075,462.974z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M381.871,380.12V201.04c0-4.512-3.658-8.171-8.171-8.171c-4.512,0-8.17,3.658-8.17,8.171v179.08 c-19.962,3.833-35.094,21.418-35.094,42.48c0,23.856,19.409,43.264,43.264,43.264c23.856,0,43.264-19.409,43.264-43.264 C416.965,401.538,401.832,383.953,381.871,380.12z M373.701,449.525c-14.845,0-26.923-12.078-26.923-26.923 c0-14.845,12.078-26.923,26.923-26.923c14.845,0,26.923,12.078,26.923,26.923C400.624,437.447,388.546,449.525,373.701,449.525z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M487.697,146.886c-1.926-4.081-6.797-5.826-10.877-3.902c-4.081,1.926-5.827,6.796-3.902,10.877 c15.139,32.078,22.815,66.444,22.815,102.14c0,6.357-0.266,12.712-0.768,19.048h-81.85v-76.245 c0-21.735-17.682-39.417-39.417-39.417c-3.705,0-7.4,0.545-10.96,1.562c-0.115,0.034-0.235,0.057-0.351,0.091 c5.632-5.54,9.13-13.246,9.13-21.751c0-16.829-13.69-30.52-30.52-30.52h-62.575c-7.819,0-14.179-6.361-14.179-14.18 c0-7.819,6.36-14.179,14.179-14.179h140.708c9.472,8.8,18.301,18.317,26.184,28.571c4.488,5.838,8.79,11.837,12.76,18.043 c2.379,3.718,7.543,4.869,11.286,2.478c3.752-2.396,4.874-7.542,2.478-11.286c-1.538-2.404-3.117-4.782-4.732-7.132 c-11.311-16.448-24.492-31.524-39.266-44.901C380.707,23.505,319.706,0,256.075,0C196.746,0,138.914,20.762,93.233,58.461 c-3.48,2.873-3.973,8.022-1.101,11.503c2.873,3.48,8.022,3.973,11.503,1.101c42.759-35.29,96.898-54.724,152.44-54.724 c52.069,0,102.256,16.814,143.536,47.73H278.425c-16.829,0-30.52,13.691-30.52,30.52c0,16.829,13.691,30.521,30.52,30.521H341 c7.819,0,14.179,6.36,14.179,14.179c0,7.819-6.36,14.18-14.179,14.18H218.508c-16.829,0-30.52,13.691-30.52,30.52 s13.69,30.52,30.52,30.52h115.776v28.358h-62.118c-13.378,0-24.262,10.884-24.262,24.262s10.884,24.262,24.262,24.262h62.118 v59.998c-0.802,0.446-1.595,0.903-2.378,1.374c-3.044,1.828-5.945,3.849-8.695,6.035c-5.434-8.637-15.057-14.368-25.836-14.368 H130.216c-7.819,0-14.179-6.361-14.179-14.18c0-7.819,6.36-14.179,14.179-14.179h52.771c16.829,0,30.52-13.692,30.52-30.521 c0-16.829-13.69-30.52-30.52-30.52H16.428c0.244-61.22,23.528-119.365,65.643-163.819c3.104-3.276,2.963-8.447-0.313-11.551 c-3.276-3.104-8.447-2.963-11.551,0.313C24.982,127.712,0.075,190.226,0.075,256.001c0,17.951,1.877,35.918,5.611,53.477 c7.033,33.079,20.769,64.722,40.071,92.486c0.051,0.074,0.104,0.146,0.157,0.218c0.047,0.072,0.096,0.145,0.146,0.216 C93.984,471.028,172.494,512,256.076,512c29.305,0,58.031-4.937,85.447-14.649c9.877,4.267,20.753,6.644,32.178,6.644 c44.881,0,81.394-36.513,81.394-81.393c0-1.807-0.063-3.606-0.183-5.395c2.704-3.326,5.288-6.661,7.697-9.944 c27.79-37.885,44.868-83.392,48.511-130.24C514.589,232.306,506.871,187.518,487.697,146.886z M218.508,198.168 c-7.819-0.001-14.18-6.361-14.18-14.18c0-7.819,6.36-14.179,14.179-14.179h122.492c2.375,0,4.687-0.272,6.907-0.789 c-0.109,0.095-0.211,0.196-0.319,0.292c-0.275,0.243-0.544,0.49-0.81,0.741c-7.245,6.786-11.8,16.393-12.409,26.308 c-0.024,0.398-0.039,0.796-0.051,1.196c-0.007,0.204-0.023,0.405-0.026,0.61H218.508z M272.166,275.049L272.166,275.049 c-4.367,0-7.921-3.554-7.921-7.921c0-4.367,3.554-7.921,7.921-7.921h62.118v15.842H272.166z M256.075,495.659 c-73.059,0-141.971-33.452-187.311-90.19h81.463c4.512,0,8.17-3.658,8.17-8.171c0-4.512-3.658-8.17-8.17-8.17H56.794 c-0.555-0.828-1.107-1.658-1.652-2.494c-12.219-18.75-21.802-39.228-28.324-60.638c-2.051-6.73-3.805-13.557-5.256-20.46 c-0.017-0.084-0.035-0.169-0.052-0.253c-2.333-11.175-3.868-22.518-4.594-33.911h166.072c7.819,0,14.179,6.36,14.179,14.179 c0,7.819-6.36,14.18-14.179,14.18h-52.771c-16.829,0-30.52,13.69-30.52,30.52s13.69,30.521,30.52,30.521h167.158 c6.305,0,11.76,4.221,13.543,10.048c-4.576,5.535-8.373,11.61-11.336,18.134c-0.73,0.118-1.467,0.178-2.207,0.178H180.731 c-4.512,0-8.17,3.658-8.17,8.171c0,4.512,3.658,8.17,8.17,8.17h113.431c-1.021,4.688-1.64,9.492-1.807,14.367 c-0.154,4.475,0.091,8.935,0.667,13.375c2.275,17.384,10.048,33.052,21.521,45.207c0.054,0.058,0.109,0.114,0.163,0.171 c2.266,2.386,4.677,4.589,7.173,6.728c0.052,0.042,0.104,0.086,0.156,0.129c0.301,0.248,0.597,0.501,0.902,0.745 C301.289,492.479,278.869,495.659,256.075,495.659z M373.701,487.654c-35.158,0-65.052-29.636-65.052-65.052 c0-25.036,14.641-48.133,37.299-58.842c2.857-1.35,4.679-4.227,4.679-7.387V206.411v-7.607c0-12.724,10.352-23.076,23.076-23.076 s23.076,10.352,23.076,23.076v157.57c0,3.141,1.838,6.043,4.679,7.386c22.321,10.552,37.299,33.957,37.299,58.842 C438.753,458.472,409.57,487.654,373.701,487.654z M466.727,370.358c-0.219,0.402-0.439,0.803-0.66,1.203 c-4.329,7.841-9.077,15.388-14.25,22.698h-1.811c-3.685-9.893-9.304-18.94-16.398-26.667c-0.044-0.048-0.087-0.095-0.131-0.143 c-0.476-0.515-0.938-1.044-1.427-1.547h37.046C468.323,367.395,467.532,368.88,466.727,370.358z M476.753,349.56h-63.635V291.39 h80.006C490.159,311.406,484.669,330.915,476.753,349.56z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
                                 </svg>
                             </div>
                             <h3 class="text-xl font-semibold text-white group-hover:text-logo-blue-dark mb-3">Minimized
@@ -674,10 +729,17 @@
                         <div
                             class="text-center p-6 bg-logo-blue-dark hover:bg-white border-2 hover:border-logo-blue-dark rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 animate-on-scroll animate-delay-200 hover-lift group">
                             <div class="text-logo-red mb-4 flex justify-center">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
-                                    </path>
+                                <svg fill="#c1272d" width="32px" height="32px" viewBox="0 -0.21 16.001 16.001"
+                                    id="certified-16px" xmlns="http://www.w3.org/2000/svg" stroke="#c1272d"
+                                    stroke-width="0.00016001">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path id="Path_154" data-name="Path 154"
+                                            d="M-4.146,12.146l-1.871-1.87a1.48,1.48,0,0,0,.484-.6,2.4,2.4,0,0,0-.214-1.792A2.882,2.882,0,0,1-6,7a2.726,2.726,0,0,1,.247-.841,2.433,2.433,0,0,0,.219-1.838A2.428,2.428,0,0,0-6.988,3.177a2.73,2.73,0,0,1-.768-.421,2.887,2.887,0,0,1-.45-.805A2.4,2.4,0,0,0-9.321.533a2.386,2.386,0,0,0-1.792.214A2.882,2.882,0,0,1-12,1a2.726,2.726,0,0,1-.841-.247A2.428,2.428,0,0,0-14.679.533a2.428,2.428,0,0,0-1.144,1.455,2.73,2.73,0,0,1-.421.768,2.887,2.887,0,0,1-.805.45,2.4,2.4,0,0,0-1.418,1.115,2.4,2.4,0,0,0,.214,1.792A2.882,2.882,0,0,1-18,7a2.726,2.726,0,0,1-.247.841,2.433,2.433,0,0,0-.219,1.838,1.517,1.517,0,0,0,.48.6l-1.867,1.866a.5.5,0,0,0-.14.434.5.5,0,0,0,.27.367l1.851.926.926,1.851a.5.5,0,0,0,.367.27A.549.549,0,0,0-16.5,16a.5.5,0,0,0,.354-.146l2.313-2.314a4.664,4.664,0,0,0,.946-.287A2.882,2.882,0,0,1-12,13a2.726,2.726,0,0,1,.841.247,4.514,4.514,0,0,0,1.005.305l2.3,2.3A.5.5,0,0,0-7.5,16a.549.549,0,0,0,.08-.006.5.5,0,0,0,.367-.27l.926-1.851,1.851-.926a.5.5,0,0,0,.27-.367A.5.5,0,0,0-4.146,12.146ZM-12,12a3.535,3.535,0,0,0-1.25.32c-.4.157-.815.318-1.046.222s-.41-.5-.583-.9a3.5,3.5,0,0,0-.658-1.11A3.373,3.373,0,0,0-16.616,9.9c-.4-.175-.822-.356-.927-.609s.063-.677.225-1.086A3.409,3.409,0,0,0-17,7a3.535,3.535,0,0,0-.32-1.25c-.157-.4-.318-.815-.222-1.046s.5-.41.9-.583a3.5,3.5,0,0,0,1.11-.658A3.373,3.373,0,0,0-14.9,2.384c.175-.4.356-.822.609-.927a1.808,1.808,0,0,1,1.086.225A3.409,3.409,0,0,0-12,2a3.535,3.535,0,0,0,1.25-.32c.4-.157.812-.321,1.046-.222s.41.5.583.9a3.5,3.5,0,0,0,.658,1.11,3.373,3.373,0,0,0,1.079.632c.4.175.822.356.927.609s-.063.677-.225,1.086A3.409,3.409,0,0,0-7,7a3.535,3.535,0,0,0,.32,1.25c.157.4.318.815.222,1.046s-.5.41-.9.583a3.5,3.5,0,0,0-1.11.658A3.373,3.373,0,0,0-9.1,11.616c-.175.4-.356.822-.609.927s-.676-.063-1.086-.225A3.409,3.409,0,0,0-12,12Zm-4.363,2.655-.69-1.38a.5.5,0,0,0-.223-.223l-1.38-.69,1.572-1.572.072.032a2.73,2.73,0,0,1,.768.421,2.887,2.887,0,0,1,.45.8,3.006,3.006,0,0,0,.812,1.226Zm9.639-1.6a.5.5,0,0,0-.223.223l-.69,1.38-1.38-1.38a3.012,3.012,0,0,0,.84-1.264,2.73,2.73,0,0,1,.421-.768,2.887,2.887,0,0,1,.8-.45l.026-.012,1.581,1.581ZM-8,7a4,4,0,0,0-4-4,4,4,0,0,0-4,4,4,4,0,0,0,4,4A4,4,0,0,0-8,7Zm-4,3a3,3,0,0,1-3-3,3,3,0,0,1,3-3A3,3,0,0,1-9,7,3,3,0,0,1-12,10Z"
+                                            transform="translate(20 -0.423)"></path>
+                                    </g>
+                                </svg>
                                 </svg>
                             </div>
                             <h3 class="text-xl font-semibold text-white group-hover:text-logo-blue-dark mb-3">Certified
@@ -690,10 +752,15 @@
                         <div
                             class="text-center p-6 bg-logo-blue-dark hover:bg-white border-2 hover:border-logo-blue-dark rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 animate-on-scroll animate-delay-300 hover-lift group">
                             <div class="text-logo-red mb-4 flex justify-center">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z">
-                                    </path>
+                                <svg fill="#c1272d" width="32px" height="32px" viewBox="0 0 50 50"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M3 8C1.355469 8 0 9.355469 0 11L0 39C0 40.644531 1.355469 42 3 42L5 42L5 43C5 44.09375 5.90625 45 7 45L10 45C11.09375 45 12 44.09375 12 43L12 42L38 42L38 43C38 44.09375 38.90625 45 40 45L43 45C44.09375 45 45 44.09375 45 43L45 42L47 42C48.644531 42 50 40.644531 50 39L50 11C50 9.355469 48.644531 8 47 8 Z M 3 10L47 10C47.5625 10 48 10.4375 48 11L48 39C48 39.5625 47.5625 40 47 40L39.1875 40C39.054688 39.972656 38.914063 39.972656 38.78125 40L6.1875 40C6.054688 39.972656 5.914063 39.972656 5.78125 40L3 40C2.4375 40 2 39.5625 2 39L2 11C2 10.4375 2.4375 10 3 10 Z M 5 13L5 37L40 37L40 13 Z M 7 15L38 15L38 35L7 35 Z M 44 16C42.894531 16 42 16.894531 42 18C42 19.105469 42.894531 20 44 20C45.105469 20 46 19.105469 46 18C46 16.894531 45.105469 16 44 16 Z M 34.15625 19.9375C33.957031 19.933594 33.761719 19.988281 33.59375 20.09375C33.59375 20.09375 28.964844 22 26.125 22C24.707031 22 23.75 21.59375 22.59375 21.09375C21.4375 20.59375 20.066406 20 18.21875 20C14.523438 20 10.5625 22.09375 10.5625 22.09375C10.0625 22.335938 9.851563 22.9375 10.09375 23.4375C10.335938 23.9375 10.9375 24.148438 11.4375 23.90625C11.4375 23.90625 15.332031 22 18.21875 22C19.664063 22 20.628906 22.40625 21.78125 22.90625C22.933594 23.40625 24.296875 24 26.125 24C29.785156 24 34.40625 21.90625 34.40625 21.90625C34.894531 21.78125 35.214844 21.3125 35.148438 20.8125C35.085938 20.3125 34.660156 19.9375 34.15625 19.9375 Z M 44 23C42.894531 23 42 23.894531 42 25C42 26.105469 42.894531 27 44 27C45.105469 27 46 26.105469 46 25C46 23.894531 45.105469 23 44 23 Z M 34.15625 25.9375C33.957031 25.933594 33.761719 25.988281 33.59375 26.09375C33.59375 26.09375 28.964844 28 26.125 28C24.707031 28 23.75 27.59375 22.59375 27.09375C21.4375 26.59375 20.066406 26 18.21875 26C14.523438 26 10.5625 28.09375 10.5625 28.09375C10.0625 28.335938 9.851563 28.9375 10.09375 29.4375C10.335938 29.9375 10.9375 30.148438 11.4375 29.90625C11.4375 29.90625 15.332031 28 18.21875 28C19.664063 28 20.628906 28.40625 21.78125 28.90625C22.933594 29.40625 24.296875 30 26.125 30C29.785156 30 34.40625 27.90625 34.40625 27.90625C34.894531 27.78125 35.214844 27.3125 35.148438 26.8125C35.085938 26.3125 34.660156 25.9375 34.15625 25.9375 Z M 44 30C42.894531 30 42 30.894531 42 32C42 33.105469 42.894531 34 44 34C45.105469 34 46 33.105469 46 32C46 30.894531 45.105469 30 44 30 Z M 7 42L10 42L10 43L7 43 Z M 40 42L43 42L43 43L40 43Z">
+                                        </path>
+                                    </g>
                                 </svg>
                             </div>
                             <h3 class="text-xl font-semibold text-white group-hover:text-logo-blue-dark mb-3">
@@ -782,23 +849,81 @@
                 </div>
             </section>
 
+            <!-- Trusted Brands Section -->
+            <section class="py-20 bg-white text-center">
+                <div class="max-w-6xl mx-auto px-4">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-logo-blue-dark">Trusted by Leading Brands</h2>
+                    <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
+                        At Sealpack Enterprises, we take pride in partnering with some of the leading names across
+                        industries. From food processing giants to renowned bakery and confectionery brands, our
+                        customized packaging solutions have supported businesses in delivering fresh, high-quality
+                        products to their customers.
+                    </p>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                        <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-center">
+                            <img src="/images/bikaner.png" alt="Bikanervala" class="h-12" />
+                        </div>
+                        <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-center">
+                            <img src="/images/Amul_official_logo.svg.png" alt="Amul" class="h-12" />
+                        </div>
+                        <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-center">
+                            <img src="/images/Bikano-Namkeen.jpg" alt="Bikano" class="h-12" />
+                        </div>
+                        <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-center">
+                            <img src="/images/prabhaji.png" alt="Prabhuji" class="h-12" />
+                        </div>
+                        <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-center">
+                            <img src="/images/dokkin.png" alt="Dunkin Donuts" class="h-12" />
+                        </div>
+                        <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-center">
+                            <img src="/images/swiggy-logo_brandlogos.net_fplmb.png" alt="Swiggy" class="h-12" />
+                        </div>
+                        <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-center">
+                            <img src="/images/IRCTC-logo-2048x1152.png" alt="IRCTC" class="h-12" />
+                        </div>
+                        <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-center">
+                            <img src="/images/bikaji.jpg" alt="Bikaji" class="h-12" />
+                        </div>
+                        <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-center">
+                            <img src="/images/Dominos-logo-2048x1152.png" alt="Domino's" class="h-12" />
+                        </div>
+                        <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-center">
+                            <img src="/images/Haldirams_Logo_SVG (1).png" alt="Haldiram's" class="h-12" />
+                        </div>
+                        <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-center">
+                            <img src="/images/images-2.png" alt="Gyan" class="h-12" />
+                        </div>
+                        <div class="bg-gray-200 p-4 rounded-lg flex items-center justify-center">
+                            <img src="/images/ananda.png" alt="Ananda" class="h-12" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Newsletter -->
-            <section class="py-10 bg-white">
+            <section class="py-10 bg-gray-200 mb-16">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold text-logo-gray mb-4 animate-on-scroll">
+                    <h2 class="text-3xl md:text-4xl font-bold text-logo-blue-dark mb-4 animate-on-scroll">
                         Stay Updated
                     </h2>
                     <p class="text-lg text-logo-gray/80 mb-8 max-w-2xl mx-auto animate-on-scroll animate-delay-100">
                         Get the latest news about sustainable packaging and exclusive offers
                     </p>
-                    <div class="max-w-md mx-auto flex flex-col sm:flex-row gap-4 animate-on-scroll animate-delay-200">
-                        <input type="email" id="newsletter-email" placeholder="Enter your email"
+                    <form action="https://formsubmit.co/jhamanoj1988@gmail.com" method="POST" target="_blank"
+                        class="max-w-md mx-auto flex flex-col sm:flex-row gap-4 animate-on-scroll animate-delay-200">
+                        <input type="email" name="email" required placeholder="Enter your email"
                             class="form-input flex-1 px-4 py-3 rounded-lg border-2 border-logo-blue-dark focus:outline-none focus:ring-2 focus:ring-logo-blue-dark" />
-                        <button onclick="subscribeNewsletter()"
+                        <button type="submit"
                             class="btn-animate bg-logo-red hover:bg-logo-red/90 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105">
                             Subscribe
                         </button>
-                    </div>
+
+                        <!-- Hidden inputs for security and redirect -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New Newsletter Subscriber">
+                        <input type="hidden" name="_template" value="table">
+                    </form>
                 </div>
             </section>
         </div>
@@ -809,7 +934,7 @@
             <section class="relative py-20 bg-gradient-to-r from-warm-beige to-white">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center">
-                        <h1 class="text-4xl md:text-5xl font-bold text-logo-gray mb-6">
+                        <h1 class="text-4xl md:text-5xl font-bold text-logo-blue-dark mb-6">
                             About Sealpack Enterprises
                         </h1>
                         <p class="text-lg text-logo-gray/80 max-w-3xl mx-auto leading-relaxed">
@@ -819,6 +944,48 @@
                             industry.
                         </p>
                     </div>
+                </div>
+            </section>
+
+            <!-- About Section  -->
+            <section class="bg-gray-100 py-16 px-6">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+                    <!-- Left Side: Text Content -->
+                    <div>
+                        <h2 class="text-4xl font-bold text-logo-blue-dark mb-6">About Us</h2>
+                        <p class="text-logo-gray/80 text-lg mb-6">
+                            Founded in 2018, <strong>Sealpack Enterprises</strong> is a leading innovator and
+                            manufacturer of eco-conscious, semi-rigid and rigid food packaging solutions in India. We
+                            specialize in customized sustainable packaging designed to meet the specific needs of
+                            industries including food delivery, dairy, sweets, bakery, QSR, and fresh produce.
+                        </p>
+                        <p class="text-logo-gray/80 text-lg mb-6">
+                            Our product catalog features 250+ SKUs, crafted with high precision using advanced German
+                            and Japanese technologies. With a robust distribution network of over 500 partners across
+                            India and abroad, we ensure timely delivery of hygienic and high-performance packaging
+                            across six key segments:
+                        </p>
+                        <ul class="list-disc list-inside text-logo-gray font-medium text-base space-y-1">
+                            <li>Takeaway Foods & Restaurant</li>
+                            <li>Agro Products</li>
+                            <li>Dairy</li>
+                            <li>Sweets & Confectionery</li>
+                            <li>Branded Packaging</li>
+                            <li>Bakery</li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Side: Image -->
+                    <div class="flex justify-center">
+                        <img src="/images/combo-meal-box.png" alt="Combo Meal Box" class="rounded-lg w-full max-w-md">
+                    </div>
+                </div>
+
+                <!-- Footer Text (Optional Branding Slogan) -->
+                <div class="mt-10 text-center">
+                    <img src="/images/logo.jpg" alt="Sealpack Logo" class="mx-auto w-24 mb-2">
+                    <p class="text-red-600 font-semibold text-lg">Make the packaging smarter</p>
                 </div>
             </section>
 
@@ -838,7 +1005,7 @@
                                             </path>
                                         </svg>
                                     </div>
-                                    <h2 class="text-3xl font-bold text-logo-gray">Our Mission</h2>
+                                    <h2 class="text-3xl font-bold text-logo-red">Our Mission</h2>
                                 </div>
                                 <p class="text-lg text-logo-gray/80 leading-relaxed">
                                     To provide innovative, sustainable packaging solutions that meet the evolving needs
@@ -860,7 +1027,7 @@
                                             </path>
                                         </svg>
                                     </div>
-                                    <h2 class="text-3xl font-bold text-logo-gray">Our Vision</h2>
+                                    <h2 class="text-3xl font-bold text-logo-blue-dark">Our Vision</h2>
                                 </div>
                                 <p class="text-lg text-logo-gray/80 leading-relaxed">
                                     To become the global leader in sustainable packaging, setting new standards for
@@ -871,8 +1038,8 @@
                         </div>
 
                         <div class="relative">
-                            <img src="https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=600"
-                                alt="Sustainable packaging products" class="rounded-xl shadow-lg" />
+                            <img src="/images/about 1.jpg" alt="Sustainable packaging products"
+                                class="rounded-xl shadow-lg" />
                             <div class="absolute inset-0 bg-gradient-to-t from-warm-brown/20 to-transparent rounded-xl">
                             </div>
                         </div>
@@ -885,12 +1052,11 @@
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div class="order-2 lg:order-1">
-                            <img src="https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=600"
-                                alt="Our team at work" class="rounded-xl shadow-lg" />
+                            <img src="/images/about-2.jpg" alt="Our team at work" class="rounded-xl shadow-lg" />
                         </div>
 
                         <div class="order-1 lg:order-2">
-                            <h2 class="text-3xl font-bold text-logo-gray mb-6">Our Story</h2>
+                            <h2 class="text-3xl font-bold text-logo-blue-dark mb-6">Our Story</h2>
                             <p class="text-lg text-logo-gray/80 mb-6 leading-relaxed">
                                 Founded in 2018 by a team of environmental engineers and business leaders, Sealpack
                                 Enterprises was born
@@ -917,7 +1083,7 @@
             <section class="py-20 bg-white">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-16">
-                        <h2 class="text-3xl md:text-4xl font-bold text-logo-gray mb-4">
+                        <h2 class="text-3xl md:text-4xl font-bold text-logo-blue-dark mb-4">
                             Our Core Values
                         </h2>
                         <p class="text-lg text-logo-gray/70 max-w-2xl mx-auto">
@@ -936,7 +1102,7 @@
                                     </path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-semibold text-logo-gray mb-3">Customer First</h3>
+                            <h3 class="text-xl font-semibold text-logo-blue-dark mb-3">Customer First</h3>
                             <p class="text-logo-gray/70">
                                 We prioritize our customers' needs and success, building long-term partnerships based on
                                 trust and excellence.
@@ -952,7 +1118,7 @@
                                     </path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-semibold text-logo-gray mb-3">Quality Excellence</h3>
+                            <h3 class="text-xl font-semibold text-logo-blue-dark mb-3">Quality Excellence</h3>
                             <p class="text-logo-gray/70">
                                 We maintain rigorous quality standards in every product, ensuring reliability and
                                 performance you can count on.
@@ -968,7 +1134,7 @@
                                     </path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-semibold text-logo-gray mb-3">Environmental Responsibility</h3>
+                            <h3 class="text-xl font-semibold text-logo-blue-dark mb-3">Environmental Responsibility</h3>
                             <p class="text-logo-gray/70">
                                 Sustainability isn't just what we do—it's who we are. Every decision considers
                                 environmental impact.
@@ -982,7 +1148,7 @@
             <section class="py-20 bg-warm-beige">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-16">
-                        <h2 class="text-3xl md:text-4xl font-bold text-logo-gray mb-4">
+                        <h2 class="text-3xl md:text-4xl font-bold text-logo-blue-dark mb-4">
                             Our Journey
                         </h2>
                         <p class="text-lg text-logo-gray/70 max-w-2xl mx-auto">
@@ -1117,7 +1283,7 @@
         <!-- Contact Page -->
         <div id="contact-page" class="page">
             <!-- Hero Section -->
-            <section class="relative py-20 bg-gradient-to-r from-warm-beige to-white">
+            <section class="relative py-20 bg-gray-200">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center">
                         <h1 class="text-4xl md:text-5xl font-bold text-logo-gray mb-6">
@@ -1155,9 +1321,8 @@
                                     <div>
                                         <h3 class="font-semibold text-logo-gray mb-1">Address</h3>
                                         <p class="text-logo-gray/70">
-                                            123 Packaging Street<br />
-                                            Industrial City, IC 12345<br />
-                                            United States
+                                            Shop no 1/2 Singh estate, Road No. 2, near Basera Studio, Thakur Village,
+                                            Kandivali East, Mumbai,<br> Maharashtra 4000101
                                         </p>
                                     </div>
                                 </div>
@@ -1175,8 +1340,7 @@
                                     <div>
                                         <h3 class="font-semibold text-logo-gray mb-1">Phone</h3>
                                         <p class="text-logo-gray/70">
-                                            Main: (555) 123-4567<br />
-                                            Sales: (555) 123-4568
+                                            +91 9867194284
                                         </p>
                                     </div>
                                 </div>
@@ -1194,13 +1358,12 @@
                                     <div>
                                         <h3 class="font-semibold text-logo-gray mb-1">Email</h3>
                                         <p class="text-logo-gray/70">
-                                            info@sealpack.com<br />
-                                            sales@sealpack.com
+                                            jhamanoj1988@gmail.com
                                         </p>
                                     </div>
                                 </div>
 
-                                <div class="flex items-start gap-4">
+                                <!-- <div class="flex items-start gap-4">
                                     <div
                                         class="w-12 h-12 bg-logo-blue-dark rounded-lg flex items-center justify-center flex-shrink-0">
                                         <svg class="w-6 h-6 text-logo-white" fill="none" stroke="currentColor"
@@ -1217,7 +1380,7 @@
                                             Sunday: Closed
                                         </p>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
@@ -1226,7 +1389,8 @@
                             <div class="bg-warm-beige p-8 rounded-xl shadow-lg">
                                 <h2 class="text-2xl font-bold text-logo-gray mb-6">Send Us a Message</h2>
 
-                                <form id="contact-form" class="space-y-6">
+                                <form id="contact-form" class="space-y-6"
+                                    action="https://formsubmit.co/jhamanoj1988@gmail.com" method="POST">
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div>
                                             <label for="name" class="block text-sm font-medium text-logo-gray mb-2">
@@ -1281,7 +1445,7 @@
             </section>
 
             <!-- Map Section -->
-            <section class="py-20 bg-warm-beige">
+            <section class="py-20 bg-gray-200">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center mb-12">
                         <h2 class="text-3xl md:text-4xl font-bold text-logo-gray mb-4">
@@ -1293,34 +1457,20 @@
                         </p>
                     </div>
 
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                        <div class="aspect-w-16 aspect-h-9 bg-gray-200 flex items-center justify-center h-96">
-                            <div class="text-center">
-                                <svg class="w-12 h-12 text-logo-red mx-auto mb-4" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-                                    </path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                                <p class="text-logo-gray font-semibold">Interactive Map</p>
-                                <p class="text-logo-gray/70 text-sm mt-2">
-                                    123 Packaging Street, Industrial City, IC 12345
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.7667536444164!2d72.8720625252086!3d19.205387282026035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7b7c6bb0023%3A0x48c88c63f279474b!2sSealpack%20Enterprises!5e0!3m2!1sen!2sin!4v1752127855080!5m2!1sen!2sin"
+                        width="100%" height="450" style="border:0; border-radius: 10px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
 
             <!-- CTA Section -->
-            <section class="py-20 bg-logo-blue-dark">
+            <section class="py-20 bg-white">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold text-logo-white mb-4">
+                    <h2 class="text-3xl md:text-4xl font-bold text-logo-blue-dark mb-4">
                         Ready to Get Started?
                     </h2>
-                    <p class="text-lg text-logo-white/80 mb-8 max-w-2xl mx-auto">
+                    <p class="text-lg text-logo-gray mb-8 max-w-2xl mx-auto">
                         Join hundreds of businesses that have made the switch to sustainable packaging with Sealpack.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -1328,10 +1478,10 @@
                             class="bg-logo-blue-dark hover:bg-logo-blue-dark/90 text-logo-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105">
                             Request Quote
                         </button>
-                        <button
+                        <!-- <button
                             class="border-2 border-logo-blue-dark text-logo-blue-dark bg-logo-white hover:bg-logo-blue-dark hover:text-logo-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105">
                             Schedule Tour
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </section>
@@ -1382,6 +1532,106 @@
         </a>
     </div>
 
+    <!-- Sustainability Page -->
+    <div id="sustainability-page" class="page">
+
+        <!-- Section 1: Hero + Globe Image -->
+        <section class="flex flex-col lg:flex-row items-center justify-center px-6 py-16 bg-white">
+            <div class="w-full lg:w-1/2 flex justify-center mb-10 lg:mb-0">
+                <img src="/images/sustainability-globe.jpg" alt="Sustainability Globe" class="w-[70%] max-w-full">
+            </div>
+            <div class="w-full lg:w-1/2 text-left lg:pl-12">
+                <h2 class="text-3xl font-bold text-logo-gray mb-4">Sealpack Enterprises Driving Global Sustainability
+                </h2>
+                <p class="text-logo-gray/80 text-lg text-justify">
+                    Our core lies in continuous innovation, modern manufacturing technologies, and purposeful product
+                    design that ensures safety, performance, and sustainability. <br>
+
+                    We don’t just create packaging — we engineer solutions that protect your products, reduce
+                    environmental impact, and reflect your brand values. From biodegradable materials to reusable and
+                    recyclable packaging formats, our R&D team works relentlessly to offer smart alternatives that
+                    benefit both businesses and the planet. <br>
+
+                    Our commitment to excellence is backed by cutting-edge machinery, global safety standards, and a
+                    vision to create packaging that goes beyond aesthetics — it’s about functionality, eco-efficiency,
+                    and long-term value. Whether it’s the food industry, pharma, or consumer goods, we deliver packaging
+                    that meets regulatory compliance while promoting green responsibility. <br>
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 2: Sustainability in Process -->
+        <section class="bg-gray-200 py-16 px-6">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-2xl font-bold text-logo-gray mb-6">Our Eco-Driven Manufacturing Process</h2>
+                <ul class="list-disc list-inside space-y-4 text-logo-gray/90 text-base leading-relaxed">
+                    <li><strong>Waste Optimization:</strong> We use fully recyclable and post-consumer plastics, and
+                        repurpose scrap materials in a closed-loop system to maximize resource efficiency and reduce our
+                        carbon footprint.</li>
+                    <li><strong>Energy-Efficient Operations:</strong> With cutting-edge machinery sourced from leading
+                        global suppliers, we ensure minimal energy usage and low emission output across all our plants.
+                    </li>
+                    <li><strong>Product Excellence:</strong> Sustainability enhances our quality—every product is made
+                        to be more durable, safe, and reliable through green production techniques.</li>
+                    <li><strong>Promoting Circular Economy:</strong> Our PET and PP-based products are reprocessed into
+                        new forms, keeping valuable materials in use longer and reducing waste.</li>
+                </ul>
+
+                <p class="mt-10 italic text-logo-gray/90 font-medium">
+                    In addition to our recyclable material usage and lightweight packaging strategies, we support a
+                    healthier ecosystem through:
+                </p>
+
+                <ul class="list-disc list-inside space-y-3 mt-4 text-logo-gray/90">
+                    <li><strong>Efficient Resource Use:</strong> Our packaging designs use less raw material, helping
+                        conserve Earth’s natural resources.</li>
+                    <li><strong>Food Preservation:</strong> By extending shelf life and protecting contents, our
+                        products reduce food wastage in the supply chain.</li>
+                    <li><strong>Lower Emissions:</strong> Our sustainable packaging results in fewer greenhouse gases
+                        compared to conventional packaging materials.</li>
+                </ul>
+
+                <p class="mt-6 text-logo-gray/80">We continuously research and evolve to introduce better materials and
+                    greener packaging practices that respect our planet.</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Sustainability Icons -->
+        <section class="bg-white py-16 px-4 sm:px-6 lg:px-8">
+            <div
+                class="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 sm:gap-8 lg:gap-10 text-center">
+
+                <div class="flex flex-col items-center">
+                    <img src="/images/icons8-recycle-48.png" class="w-12 h-12 mb-2 sm:mb-4" alt="Recyclable">
+                    <p class="text-logo-gray font-semibold text-sm sm:text-base">Material is Recyclable</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="/images/icons8-renewable-48.png" class="w-12 h-12 mb-2 sm:mb-4" alt="Abundant">
+                    <p class="text-logo-gray font-semibold text-sm sm:text-base">Material is Abundant & Renewable</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="/images/icons8-lightweight-48.png" class="w-12 h-12 mb-2 sm:mb-4" alt="Lightweight">
+                    <p class="text-logo-gray font-semibold text-sm sm:text-base">Material is Lightweight</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="/images/icons8-biodegradable-48.png" class="w-12 h-12 mb-2 sm:mb-4" alt="Compostable">
+                    <p class="text-logo-gray font-semibold text-sm sm:text-base">Material is Compostable/Biodegradable
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="/images/icons8-footprint-48.png" class="w-12 h-12 mb-2 sm:mb-4" alt="Low Impact">
+                    <p class="text-logo-gray font-semibold text-sm sm:text-base">Small Environmental Footprint</p>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
     <!-- Scroll Progress Indicator -->
     <div class="scroll-indicator" id="scroll-indicator"></div>
 
@@ -1410,6 +1660,9 @@
                                 class="text-logo-white/80 hover:text-logo-white transition-colors">Products</a></li>
                         <li><a href="#" onclick="showPage('contact')"
                                 class="text-logo-white/80 hover:text-logo-white transition-colors">Contact</a></li>
+                        <li><a href="#" onclick="showPage('sustainability')"
+                                class="text-logo-white/80 hover:text-logo-white transition-colors">Sustainability</a>
+                        </li>
                         <li><a href="#" onclick="showPage('blog')"
                                 class="text-logo-white/80 hover:text-logo-white transition-colors">Blog</a></li>
                     </ul>
