@@ -1,39 +1,3 @@
-// Navigation functionality
-let currentPage = 'home';
-
-function showPage(pageId) {
-    // Hide all pages
-    const pages = document.querySelectorAll('.page');
-    pages.forEach(page => page.classList.remove('active'));
-
-    // Show selected page
-    const targetPage = document.getElementById(pageId + '-page');
-    if (targetPage) {
-        targetPage.classList.add('active');
-        currentPage = pageId;
-    }
-
-    // Update navigation active states
-    updateNavigation(pageId);
-
-    // Close mobile menu if open
-    closeMobileMenu();
-
-    // Scroll to top
-    window.scrollTo(0, 0);
-}
-
-function updateNavigation(activePageId) {
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        const href = link.getAttribute('onclick');
-        if (href && href.includes(activePageId)) {
-            link.classList.add('active');
-        }
-    });
-}
-
 // Mobile menu functionality
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
